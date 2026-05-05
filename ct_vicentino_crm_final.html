@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -256,7 +257,7 @@
   /* ---- GRID ---- */
   .students-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 18px;
     padding: 20px 24px 40px;
   }
@@ -274,14 +275,15 @@
 
   .student-photo {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 9/16;
     object-fit: cover;
+    object-position: center top;
     display: block;
     background: var(--green-dark);
   }
   .student-photo-placeholder {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 9/16;
     background: linear-gradient(135deg, #1a3d20, #0f2a15);
     display: flex;
     align-items: center;
@@ -396,9 +398,10 @@
   .photo-upload-area:hover { border-color: var(--gold); }
   .photo-upload-area p { color: #7a9f80; font-size: 13px; margin-top: 8px; }
   .photo-preview {
-    width: 80px; height: 80px;
+    width: 80px; height: 142px;
     border-radius: 10px;
     object-fit: cover;
+    object-position: center top;
     margin: 0 auto 8px;
     display: none;
   }
